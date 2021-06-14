@@ -2,25 +2,11 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:jsp="http://java.sun.com/JSP/Page">
 	<head>
-		<!-- Fetch polyfill and D3 library -->
-			<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js" ><jsp:text></jsp:text></script>
-			<script src="https://d3js.org/d3.v4.min.js" charset="utf-8" ><jsp:text></jsp:text></script>
-			
-			<!-- LiteMol plugin and style -->
-			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/litemol@2.4.2/dist/css/LiteMol-plugin.min.css" type="text/css"><jsp:text></jsp:text></link>
-			<script src="https://cdn.jsdelivr.net/npm/litemol@2.4.2/dist/js/LiteMol-plugin.min.js" ><jsp:text></jsp:text></script>
-			
-			<!-- Webcomponents polyfill for IE -->
-			<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.2.10/webcomponents-bundle.js" charset="utf-8" ><jsp:text></jsp:text></script>
-			<script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.2.10/custom-elements-es5-adapter.js" charset="utf-8" ><jsp:text></jsp:text></script>
-			
-			<!-- Babel polyfill / The order between this and webcomponents polyfill is important and means we can't bundle it with the main component -->
-			<!-- See https://github.com/babel/babel/issues/9829 -->
-			<script src="https://cdn.jsdelivr.net/npm/@babel/polyfill@7.4.4/dist/polyfill.min.js" charset="utf-8" ><jsp:text></jsp:text></script>
-			
-			<script src="https://cdn.jsdelivr.net/npm/protvista-structure@2.1.18/dist/protvista-structure.js" ><jsp:text></jsp:text></script>
+        <!-- D3 library -->
+        <script src="https://d3js.org/d3.v4.min.js" charset="utf-8" ><jsp:text></jsp:text></script>   
+        <script src="https://cdn.jsdelivr.net/npm/protvista-uniprot@2.7.0-beta.3/dist/protvista-uniprot.js" ><jsp:text></jsp:text></script>
 	</head>
 	<body>
-		<protvista-structure accession="P05067"></protvista-structure>
+		<protvista-uniprot-structure accession="P05067"></protvista-uniprot-structure>
 	</body>
 </html>		
